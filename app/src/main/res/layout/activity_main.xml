@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/qNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Question 1 of 50"
+                android:textColor="#53AEF6"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/qTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:padding="16dp"
+                android:text="As a team leader would you take follow up of team task even if there is no deadline? "
+                android:textColor="#363434"
+                android:textSize="28dp" />
+
+            <RadioGroup
+                android:id="@+id/optionsGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <RadioButton
+                    android:id="@+id/option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:padding="16dp"
+                    android:text="Always"
+                    android:textColor="@drawable/text_color"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:padding="16dp"
+                    android:text="Often"
+                    android:textColor="@drawable/text_color"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:padding="16dp"
+                    android:text="Sometimes"
+                    android:textColor="@drawable/text_color"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:padding="16dp"
+                    android:text="Never"
+                    android:textColor="@drawable/text_color"
+                    android:textSize="20dp" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <Button
+                        android:padding="10dp"
+                        android:background="@drawable/button_border"
+                        android:id="@+id/prev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="PREVIOUS"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp" />
+
+                    <Button
+                        android:padding="10dp"
+                        android:background="@drawable/button_border"
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="NEXT"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/button_border"
+                        android:id="@+id/submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="SUBMIT"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

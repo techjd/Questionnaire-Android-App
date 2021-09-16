@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardUseCompatPadding="true">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:fontFamily="@font/montserrat_bold"-->
+<!--                android:text="Enrollment Number : "-->
+<!--                android:textColor="#53AEF6"-->
+<!--                android:textSize="25dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/enrollmentNumber"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:fontFamily="@font/montserrat_medium"-->
+<!--                android:text="190010107036"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="25dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:fontFamily="@font/montserrat_bold"-->
+<!--                android:text="Email ID : "-->
+<!--                android:textColor="#53AEF6"-->
+<!--                android:textSize="25dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/emailId"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:fontFamily="@font/montserrat_medium"-->
+<!--                android:text="19cp.jaydeepsinhparmar@adit.ac.in"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="25dp" />-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            tools:text = "You Haven't Started Filling The Questionnaire"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+<!--        <Button-->
+
+<!--            android:padding="10dp"-->
+<!--            android:background="@drawable/button_border"-->
+<!--            android:id="@+id/start"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:fontFamily="@font/montserrat_semibold"-->
+<!--            android:text="START"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:textSize="25dp" />-->
+    </LinearLayout>
+
+
+</RelativeLayout>

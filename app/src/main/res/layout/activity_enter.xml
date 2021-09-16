@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".EnterActivity">
+
+    <include
+        layout="@layout/toolbar"
+        />
+
+    <EditText
+        android:background="@drawable/edt_border"
+        android:layout_margin="15dp"
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:fontFamily="@font/montserrat_semibold"
+        android:hint="Enter Your Enrollment Number"
+        android:inputType="number"
+         />
+
+    <EditText
+        android:background="@drawable/edt_border"
+        android:textColor="#000000"
+        android:hint="Enter Your ADIT Email ID"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:padding="10dp"
+        android:background="@drawable/button_border"
+        android:layout_gravity="center"
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="ENTER"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+
+
+</LinearLayout>
